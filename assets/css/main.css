@@ -408,3 +408,22 @@ input[type="button"] {
     font-size: 1.4em; }
   .menu ul li {
     font-size: 1.7em; } }
+
+@media screen and (min-width: 320px) {
+  section.about h2 {
+    font-size: 3em;
+    font-weight: normal;
+    color: black;
+    text-align: center; }
+  section.about p {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 1.1em;
+    text-align: justify; }
+    section.about p:nth-child(5) {
+      margin-top: 50px; }
+  section.about img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%; } }

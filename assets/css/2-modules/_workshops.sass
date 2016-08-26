@@ -1,0 +1,80 @@
+@media screen and (min-width: 320px)
+  h2
+    font-size: 3em
+    font-weight: normal
+    color: black
+    text-align: center
+  h3
+    display: block
+    width: 100%
+    height: 90px
+    font-size: 3em
+    line-height: 90px
+    font-weight: normal
+    color: white
+    text-align: center
+    margin: 0
+    &:nth-child(2)
+      background-color: $accent
+    &:nth-child(3)
+      background-color: #3BAFD9
+    &:nth-child(4)
+      background-color: #3B94D9
+    &:nth-child(5)
+      background-color: #3B7AD9
+
+  a
+    display: block
+    text-align: center
+    font-size: 1.5rem
+    font-weight: normal
+    color: rgba(black, 0.3)
+    &:hover,
+    &:focus
+      font-weight: bold
+      color: black
+
+  // topics.off
+  //   display: inline-block
+  //   width: 80%
+  //   text-wrap: wrap
+
+  sensobryki.off
+    height: 0px
+
+    p:nth-child(1)
+      margin: 0 auto
+      width: 80%
+      text-align: justify
+
+    p:nth-child(2)
+      margin: 0 auto
+      width: 80%
+      text-align: left
+
+    img
+      display: block
+      width: 80%
+      margin: 0 auto
+      padding: 50px 0px
+
+    span
+      display: block
+      margin: 0 auto
+      text-align: center
+      font-size: 1.25em
+      &:nth-child(5),
+      &:nth-child(7),
+      &:nth-child(9)
+        width: 80px
+        height: 80px
+        color: white
+        font-size: 2em
+        line-height: 80px
+        font-weight: bold
+        background-color: $accent
+        border-radius: 50%
+
+  sensobryki.on
+    height: 1000px
+    width: 80%

@@ -263,43 +263,6 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: #555;
-  text-align: center;
-  font-size: 11px;
-  line-height: 38px;
-  letter-spacing: .1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbb;
-  cursor: pointer;
-  box-sizing: border-box; }
-  .button:hover, .button:active, .button:focus,
-  button:hover,
-  button:active,
-  button:focus,
-  input[type="submit"]:hover,
-  input[type="submit"]:active,
-  input[type="submit"]:focus,
-  input[type="reset"]:hover,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="button"]:hover,
-  input[type="button"]:active,
-  input[type="button"]:focus {
-    color: #333;
-    border-color: #888;
-    outline: 0; }
-
 @media screen and (min-width: 320px) {
   section.header {
     background: url(/assets/img/header-bg-temp.jpg) no-repeat;
@@ -560,3 +523,75 @@ input[type="button"] {
   @media screen and (min-width: 320px) and (min-width: 400px) {
     section.references p {
       font-size: 1.35em; } }
+
+@media screen and (min-width: 320px) {
+  section.contact span {
+    text-align: center; }
+  section.contact span:nth-child(2) {
+    font: bold 1.4em/1em Dosis; }
+  section.contact span:nth-child(3) {
+    font: normal 1.4em/1.8em Dosis; } }
+
+.socialmedia__icons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 50px 0px; }
+  .socialmedia__icons a {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    width: 13%; }
+  .socialmedia__icons a.svg:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  .socialmedia__icons object {
+    width: 100%; }
+
+.field--inactive {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  border: 1px solid #9B9B9B;
+  border-radius: 10px;
+  font-size: 26px;
+  padding-left: 20px;
+  height: 60px;
+  margin-bottom: 25px; }
+  .field--inactive:active, .field--inactive:focus {
+    outline: none; }
+  .field--inactive:nth-child(7) {
+    height: 300px; }
+
+.btn--inactive {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  border: 1px solid #9B9B9B;
+  border-radius: 10px;
+  font-size: 26px;
+  padding-left: 20px;
+  background-color: #3AC7D8;
+  color: white;
+  width: 165px;
+  height: 60px;
+  border: none;
+  padding: 0;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 75px; }
+  .btn--inactive:active, .btn--inactive:focus {
+    outline: none; }
+
+.footer__copyrights {
+  font: normal 0.8em/1.2em Dosis;
+  text-align: center;
+  color: gray;
+  padding: 0px 0px 20px 0px; }

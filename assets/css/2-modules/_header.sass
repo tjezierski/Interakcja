@@ -1,6 +1,123 @@
-div.header h1
-  background-color: pink
-  margin: 0
-  padding: 0
-  font-family: 'Dosis'
-  font-weight: bold
+@media screen and (min-width: 320px)
+
+  section.header
+    background: url(/assets/img/header-bg-temp.jpg) no-repeat
+    background-size: cover
+    // background-color: pink
+    height: 1000px
+
+    .hamb
+      position: relative
+      width: 30px
+      top: 40px
+      left: 37px
+      padding: 0px 0px 90px 0px
+      margin: 0
+      transform: rotate(0deg)
+      transition: .5s ease-in-out
+      cursor: pointer
+      z-index: 2
+
+      span
+        position: absolute
+        display: block
+        width: 30px
+        height: 3px
+        background-color: white
+        border-radius: 10px
+        // margin-bottom: 6px
+        transform: rotate(0deg)
+        transition: .25s ease-in-out
+        /* CLOSED MENU */
+        &:nth-child(1)
+          top: 0px
+
+        &:nth-child(2),
+        &:nth-child(3)
+          top: 10px
+
+        &:nth-child(4)
+          top: 20px
+
+    /* OPENED MENU */
+    .hamb.open span
+      &:nth-child(1)
+        top: 10px
+        width: 0%
+        left: 50%
+      &:nth-child(2)
+        transform: rotate(45deg)
+
+      &:nth-child(3)
+        transform: rotate(-45deg)
+
+      &:nth-child(4)
+        top: 10px
+        width: 0%
+        left: 50%
+
+    h1
+      font-size: 2.250em
+      line-height: 1.25em
+      text-align: center
+      color: white
+
+    p
+      color: white
+      font-size: 1.25em
+      line-height: 1.45em
+      width: 80%
+      // background-color: pink
+      text-align: left
+      margin: 0 auto
+      padding-bottom: 90px
+    a
+      display: block
+      margin: 0 auto
+      width: 198px
+      height: 60px
+      border-radius: 10px
+      background-color: $accent
+      color: white
+      text-align: center
+      font-size: 1.375em
+      line-height: 60px
+      font-weight: bold
+      &:hover,
+      &:focus
+        background-color: darken($accent, 5%)
+
+.menu
+  display: block
+  position: fixed
+  top: 0px
+  left: 0px
+  width: 75%
+  height: 100%
+  background-color: $accent
+  box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.5)
+  transform: translateX(-150%)
+  transition: transform 0.6s ease-in-out
+
+  ul
+    position: absolute
+    top: 110px
+    left: 35px
+    li
+      list-style: none
+      font-size: 1.5em
+      color: white
+      margin-bottom: 23px
+      &:hover,
+      &:focus
+        font-weight: bold
+
+.on
+  transform: translateX(0%)
+
+@media screen and (min-width: 400px)
+  section.header p
+    font-size: 1.4em
+
+  .menu ul li
+    font-size: 1.7em

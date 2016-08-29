@@ -1,0 +1,79 @@
+@media screen and (min-width: 320px)
+  section.contact
+    span
+      // display: block
+      text-align: center
+    span:nth-child(2)
+      font: bold 1.4em/1em Dosis
+    span:nth-child(3)
+      font: normal 1.4em/1.8em Dosis
+
+.socialmedia__icons
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  margin: 50px 0px
+
+  a
+    position: relative
+    cursor: pointer
+    display: inline-block
+    width: 13%
+
+  a.svg:after
+    content: ""
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+
+  object
+    width: 100%
+
+.outline
+
+
+@mixin contact
+  display: block
+  margin: 0 auto
+  width: 70%
+  border: 1px solid #9B9B9B
+  border-radius: 10px
+  font-size: 26px
+  padding-left: 20px
+  &:active,
+  &:focus,
+    outline: none
+
+.field--inactive
+  @include contact
+  height: 60px
+  margin-bottom: 25px
+  &:nth-child(7)
+   height: 300px
+
+.btn--inactive
+  @include contact
+  background-color: $accent
+  color: white
+  width: 165px
+  height: 60px
+  border: none
+  padding: 0
+  text-align: center
+  font-weight: bold
+  margin-bottom: 75px
+
+// .footer__title
+//   font: bold 1.3em/1.5em Dosis
+//   text-align: center
+//   color: gray
+
+.footer__copyrights
+  font: normal 0.8em/1.2em Dosis
+  text-align: center
+  color: gray
+  // margin: 20px 0px
+  padding: 0px 0px 20px 0px
+  // background-color: $accent

@@ -65,7 +65,14 @@ gulp.task('jade', function() {
 
 });
 
+/* Gulp JS */
 
+gulp.task('js', function(){
+  return gulp.src('assets/js/**/*.js')
+  .pipe(gulp.dest('_site/assets/js/'))
+  .pipe(browserSync.reload({stream:true}))
+  .pipe(gulp.dest('assets/js'));
+});
 
 /**
  * Watch scss files for changes & recompile
@@ -75,6 +82,7 @@ gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['sass']);
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*'], ['jekyll-rebuild']);
     gulp.watch('_jadefiles/*.jade', ['jade']);
+    gulp.watch('assets/js/**', ['js']);
 
 });
 

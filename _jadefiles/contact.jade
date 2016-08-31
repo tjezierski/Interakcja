@@ -1,17 +1,21 @@
 section.contact
   h2 Kontakt
-  span Karolina Gomuła
-  span <br>+48 733 660 498<br>kontakt@interakcja.eu
+  .contact__name Karolina Gomuła
+  .contact__values +48 733 660 498<br>kontakt@interakcja.eu
 
   .socialmedia__icons
-    a(href="facebook.com/interakcja2", class="facebook__icon--link")
+    a(href="facebook.com/interakcja2", class="socialmedia__svg")
       object(data="assets/img/facebook.svg", class="facebook__icon--inactive", type="image/svg+xml")
-    a(href="facebook.com/interakcja2", class="twitter__icon--link")
-      object(data="assets/img/twitter.svg", class="twitter__icon--inactive", type="image/svg+xml")
-    a(href="facebook.com/interakcja2", class="thumblr__icon--link")
-      object(data="assets/img/thumblr.svg", class="thumblr__icon--inactive", type="image/svg+xml")
-    a(href="facebook.com/interakcja2", class="instagram__icon--link")
-      object(data="assets/img/instagram.svg", class="instagram__icon--inactive", type="image/svg+xml")
+    a(href="facebook.com/interakcja2", class="socialmedia__text") facebook.com/interakcja2
+    
+    //- IF THEY WILL EXIST IN FUTURE
+    
+    //- a(href="facebook.com/interakcja2", class="socialmedia__svg")
+    //-   object(data="assets/img/twitter.svg", class="twitter__icon--inactive", type="image/svg+xml")
+    //- a(href="facebook.com/interakcja2", class="socialmedia__svg")
+    //-   object(data="assets/img/thumblr.svg", class="thumblr__icon--inactive", type="image/svg+xml")
+    //- a(href="facebook.com/interakcja2", class="socialmedia__svg")
+    //-   object(data="assets/img/instagram.svg", class="instagram__icon--inactive", type="image/svg+xml")
 
   input(type="text", class="field--inactive", placeholder="Imię", required="true", maxlenght="255")
   input(type="email", class="field--inactive", placeholder="Twój email", required="true", maxlenght="255")

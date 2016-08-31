@@ -1,39 +1,44 @@
 @media screen and (min-width: 320px)
   section.contact
-    span
-      // display: block
-      text-align: center
-    span:nth-child(2)
+    .contact__name
       font: bold 1.4em/1em Dosis
-    span:nth-child(3)
-      font: normal 1.4em/1.8em Dosis
+      text-align: center
+      padding-bottom: 15px
+    .contact__values
+      font: normal 1.4em/1.6em Dosis
+      text-align: center
 
 .socialmedia__icons
   display: flex
   flex-wrap: wrap
-  justify-content: space-around
+  justify-content: center
+  align-items: center
   margin: 50px 0px
 
-  a
-    position: relative
-    cursor: pointer
-    display: inline-block
-    width: 13%
-
-  a.svg:after
+a.socialmedia__svg
+  position: relative
+  cursor: pointer
+  display: inline-block
+  width: 13%
+  // height: 41px
+  // @include bgp
+  &:after
     content: ""
     position: absolute
     top: 0
     right: 0
     bottom: 0
     left: 0
+    // @include bgp
 
   object
     width: 100%
-
-.outline
-
-
+a.socialmedia__text
+  font-size: 1.4em
+  // line-height: 1.7
+  text-decoration: none
+  color: black
+  padding-left: 10px
 @mixin contact
   display: block
   margin: 0 auto

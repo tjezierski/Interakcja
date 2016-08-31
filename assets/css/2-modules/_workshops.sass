@@ -1,45 +1,54 @@
 @media screen and (min-width: 320px)
-  h2
-    font-size: 3em
-    font-weight: normal
-    color: black
-    text-align: center
   h3
-    display: block
+    display: flex
+    justify-content: space-around
+    align-items: center
     width: 100%
     height: 90px
     font-size: 3em
-    line-height: 90px
+    // line-height: 90px
     font-weight: normal
     color: white
-    text-align: center
+    text-align: left
     margin: 0
-    &:nth-child(2)
+    &:nth-child(1)
       background-color: $accent
-    &:nth-child(4)
+      margin-top: 90px
+    &:nth-child(3)
       background-color: #3BAFD9
-    &:nth-child(5)
+    &:nth-child(4)
       background-color: #3B94D9
-    &:nth-child(6)
+    &:nth-child(5)
       background-color: #3B7AD9
 
-    a.svg
-      position: relative
-      width: 22px
-      display: inline-block
-    a.svg:after
-      content: ""
-      position: absolute
-      top: 0
-      right: 0
-      bottom: 0
-      left: 0
+  // a.svg
+  //   position: relative
+  //   display: inline-block
+  //   margin: 0
+  //   width: 35px
+  //   line-height: 75px
+  //   border: 2px solid pink
+  //   &:after
+  //     content: ""
+  //     position: absolute
+  //     top: 0
+  //     right: 0
+  //     bottom: 0
+  //     left: 0
+  //     width: 100%
+  //     height: 100%
+  //     border: 2px solid green
+  //
+  //
+  // object[class="arrow"]
+  //   width: 100%
+  //   border: 2px solid red
 
   img
     display: block
-    width: 80%
+    width: 100%
     margin: 0 auto
-    padding: 50px 0px
+    padding: 30px 0px
   ul
     margin: 0
     padding: 0
@@ -67,7 +76,7 @@
     border-radius: 2px 2px 0 0
     color: black
     text-align: center
-    font-size: 24px
+    font-size: 1.5em
     font-weight: normal
     cursor: pointer
     position: relative
@@ -76,6 +85,8 @@
     &:hover,
     &:focus
       font-weight: bold
+    &:nth-child(2)
+      margin-top: 20px
 
     // [id^=tab]:checked + label
     //   background: #08C
@@ -89,10 +100,7 @@
   .tab-content
     z-index: 2
     display: none
-    text-align: left
     width: 100%
-    font-size: 20px
-    line-height: 140%
     padding-top: 10px
     padding: 15px
     color: black
@@ -100,6 +108,12 @@
     top: 53px
     left: 0
     box-sizing: border-box
+  p
+    text-align: justify
+    font-size: 1.1em
+    line-height: 1.4em
+    &:nth-child(2)
+      text-align: left
 
   // a
   //   display: block
@@ -132,19 +146,25 @@
   //
 
 
-    span
-      display: block
-      margin: 0 auto
-      text-align: center
-      font-size: 1.25em
-      &:nth-child(5),
-      &:nth-child(7),
-      &:nth-child(9)
-        width: 80px
-        height: 80px
-        color: white
-        font-size: 2em
-        line-height: 80px
-        font-weight: bold
-        background-color: $accent
-        border-radius: 50%
+  section.workshops span
+    display: block
+    margin: 0 auto
+    text-align: center
+    font-size: 1.5em
+    &:nth-child(4),
+    &:nth-child(6),
+    &:nth-child(8),
+      padding-bottom: 10px
+    &:nth-child(5),
+    &:nth-child(7),
+    &:nth-child(9)
+      width: 80px
+      height: 80px
+      color: white
+      font-size: 2em
+      line-height: 80px
+      font-weight: bold
+      background-color: $accent
+      border-radius: 50%
+      margin-bottom: 20px
+      // padding-bottom: 20px
